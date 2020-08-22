@@ -1,0 +1,57 @@
+Angular 4
+ Angular is a javascript comoponent based framework which is mainly used to developed single page application(SPA).
+ Because of Angular we need typescript becuase of type ambiguity in javascript.
+ i.e. Javascript is a dynamically type language it means that, we don't need to define the data type. 
+ Where as, Typescript is a statically type language it means that we require to define data type before used the variables.
+ But every browser only understand javascript beacuase they have its own javascript engine so 
+ in angular we write a code in typescript and compile it into javasript using tsc(typescript compiler).
+
+1. To install Angular, we require the following −
+   =>Nodejs (Node.js is an open source server environment.Node.js allows you to run JavaScript on the server.
+	     Node allows you to spin up a lightweight web server to host your application locally in your system.)
+   =>Npm    (NPM (Node Package Manager) comes with node.js by default)
+   =>Angular CLI (Angular CLI is a great tool for scaffolding your application. So, you don't need to write boilerplates manually.)
+   =>IDE for writing your code(used visual studio code)
+
+2. To check if nodejs is installed on your system, type
+   =>node –v
+
+   if not then download & install it from the following link
+   =>https://nodejs.org/en/download/
+
+3. Once nodejs is installed, npm will also get installed along with it.
+   To check if npm is installed or not, type
+   =>npm –v 
+
+4. To insatll the angular cli on your system type
+   =>sudo npm install -g @angular/cli
+
+   To check whether Angular CLI is installed or not
+   =>ng --version
+
+5. To create a new project
+   =>ng new projectname
+
+   To create a fake REST API, install JSON server
+   =>sudo npm install -g json-server 
+
+   To change the port of json server
+   =>json-server -p 5555 products.json
+
+6. let us compile our project with the following command 
+   =>ng serve
+	
+   To let it automatically open the browser window running the angular application
+   =>ng serve --open
+
+7. Type the url http://localhost:4200/ in the browser and see the output
+
+8. To create the component
+   =>ng g component component-name (g means generate)
+     component is nothing but the custom tag
+
+9. Install Bootstrap In Angular
+   => first check in node_modules bootstrap is installed or not.
+   => goto project directory using cmd
+   => then run the command (npm install bootstrap --save)
+   => after successfully install include the path in the angular.json file 

@@ -1,0 +1,53 @@
+*What is Angular 8?
+Angular 8 is a client-side TypeScript based framework which is used to create dynamic web applications. The main purpose of angular is create SPA(single page application).
+
+*Prerequisite for Angular 8 
+ You must have installed Node.js version > 10. NPM will be updated also because it will be used by default.
+
+*You can check your node, angular,& npm versions by using the following commands:
+To check Node and Angular CLI version used
+==> ng --version command.
+To check npm version used
+==> node -v command. 
+
+*Create an Angular 8 project
+Let's create an Angular 8 project by using the following command:
+==> ng new angular8project  
+
+*Install npm using the following command
+==> cd projectname(inside the project)
+==> npm install
+
+*Run the project using following command
+==> ng serve --o
+
+*Install Bootstrap 4 CSS framework
+Use the following command to install bootstrap in your project.
+==> npm install bootstrap --save 
+
+Now, add the following code inside the angular.json file.
+"styles": [  
+   "src/styles.css",  
+   "./node_modules/bootstrap/dist/css/bootstrap.min.css"  
+ ],  
+
+
+*Start the Angular development server using the following command.
+==> ng serve -o  
+Now the server will automatically starts at the http://localhost:4200/
+
+*Generate Angular Components
+Use the following command to generate Angular Components:
+==> ng g c component_name 
+
+*The components are automatically added to app.module.ts file. Now, we have to configure the routing of angular components inside an app-routing.module.ts file.
+
+You can check the app-routing.module.ts file inside the src >> app folder in your project file. It is created because when we install an angular app, we permit angular cli to generate the routing file for us.
+
+
+# create routes (app-routing.module.ts)
+# router-outlet (app.component.html)
+# listed the name of created componenet and anything we import (app.module.ts)
+# call REST API (data.service.ts)
+# baseURL (enviornment.ts)
+
